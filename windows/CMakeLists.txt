@@ -2,6 +2,12 @@
 cmake_minimum_required(VERSION 3.14)
 project(assistly LANGUAGES CXX)
 
+# Prevent warnings from being treated as errors
+add_compile_options(/WX-)
+
+# Optional: Reduce warning level (if needed)
+# add_compile_options(/W0)
+
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "assistly")
